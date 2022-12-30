@@ -20,7 +20,8 @@ Item* linear_search(Item* items, size_t items_size, const char* key) {
 int main() {
 	Item items[] = {{ "First key", 10 }, { "Second key", 20} };
 	char* key = "Second key"; 
-	Item* found_item = linear_search(items, 2, key);
+	size_t size = sizeof(items) / sizeof(Item);
+	Item* found_item = linear_search(items, size, key);
 
 	if(!found_item) {
 		printf("Item with key '%s' not found\n", key);
@@ -29,7 +30,7 @@ int main() {
 	printf("Item with key '%s' found and its value is %d\n", key, found_item->value);
 
 	key = "This key does not exist";
-	found_item = linear_search(items, 2, key);
+	found_item = linear_search(items, size, key);
 
 	if(!found_item) {
 		printf("Item with key '%s' not found\n", key);
