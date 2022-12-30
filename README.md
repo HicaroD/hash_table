@@ -7,7 +7,7 @@ Hash table implementation in C
 
 ## Implementations
 
-1. Linear
+1. [Linear](./linear)
 
 I implemented a linear algorithm to read a list of items of a hash table. That solution is fine in terms of performance if you
 have very few elements (like 30 or 40 elements). For very small set of data, linear search can actually be faster than a binary
