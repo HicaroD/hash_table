@@ -14,5 +14,11 @@ have very few elements (like 30 or 40 elements). For very small set of data, lin
 search. However, as soon as data gets larger and larger, linear search becames very inneficient compared to binary search.
 That's why binary search wins, for the most part of the time.
 
+2. [Binary search](./binary_search)
+
+I implemented a binary search algorithm to get the value of some key in a list of **sorted items**. This implementation is
+better than the last one because it scales better. It will be faster even for very huge sets of data. The problem is the items
+should be sorted, otherwise binary search will be pointless. 
+
 ## License
 This project is licensed under the MIT license. See [LICENSE](LICENSE).
