@@ -11,7 +11,7 @@ Item* binary_search(Item* items, size_t items_size, const char* key) {
 	size_t high = items_size;
 
 	while(low < high) {
-		size_t middle = (low + (high - low)) >> 1;
+		size_t middle = low + (high - low) / 2;
 		char* current_key = items[middle].key;
 		int comparasion_status = strcmp(current_key, key);
 
